@@ -25,7 +25,7 @@ public class Platnosc {
     private LocalDate formaRealizacji;
 
 
-    @OneToMany
+    @ManyToOne
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     private Faktura faktura;

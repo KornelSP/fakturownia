@@ -32,7 +32,7 @@ public class Faktura {
     @ManyToOne
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
-    private Kontrachent kontrachent;
+    private Kontrahent kontrahent;
 
     @OneToMany (mappedBy = "faktura")
     @ToString.Exclude

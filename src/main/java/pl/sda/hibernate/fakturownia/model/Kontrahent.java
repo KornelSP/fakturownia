@@ -10,7 +10,7 @@ import java.util.Set;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Kontrachent {
+public class Kontrahent {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -19,7 +19,7 @@ public class Kontrachent {
     private String nip;
     private String adres;
 
-    @OneToMany
+    @OneToMany (mappedBy = "kontrahent")
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     private Set<Faktura> faktury;

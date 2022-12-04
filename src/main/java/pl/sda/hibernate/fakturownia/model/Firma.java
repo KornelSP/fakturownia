@@ -19,7 +19,7 @@ public class Firma {
     private String nip;
     private String adres;
 
-    @OneToMany
+    @OneToMany (mappedBy = "firma")
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     private Set<Faktura> faktury;
